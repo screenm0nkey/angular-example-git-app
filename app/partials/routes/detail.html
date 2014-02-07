@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col-sm-12">
+    <button type="button" class="btn btn-primary" ng-click="previous(commit)" ng-disabled="prevDis">
+      Previous Commit
+    </button>
+
+    <button type="button" class="btn btn-previous" ng-click="next(commit)" ng-disabled="nextDis">
+      Next Commit
+    </button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-2">
+    <img ng-src="{{commit.gravatar}}" width="100px" height="100px"/>
+  </div>
+  <div class="col-sm-2">
+    <p>{{commit.name}}</p>
+    <p>{{commit.date | date:'yyyy-MM-dd HH:mm'}}</p>
+  </div>
+  <div class="col-sm-6">
+    <p>{{commit.message}}</p>
+  </div>
+</div>
+
+<div class="row" ng-repeat="all in commit.allCommits">
+  <div class="col-sm-12">
+    <date>{{all.date | date:'yyyy-MM-dd HH:mm'}}</date>
+    <a href="{{all.sha}}" ng-click="show(all.sha, $event)">{{all.sha}}</a>
+    <p style="display:none;">{{all.message}}</p>
+  </div>
+
+</div>

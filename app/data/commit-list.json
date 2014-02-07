@@ -1,0 +1,352 @@
+[
+  {
+    "sha": "c5f69e3f64514223917d74caf14d21b899474b42",
+    "commit": {
+      "author": {
+        "name": "Nicolas Leger",
+        "email": "nicolas.leger@nleger.com",
+        "date": "2014-02-02T01:00:26Z"
+      },
+      "committer": {
+        "name": "Tobias Bosch",
+        "email": "tbosch1009@gmail.com",
+        "date": "2014-02-05T00:43:39Z"
+      },
+      "message": "chore(ngdoc): fix misspellling of Naturally in sortVersionsNatrually\n\nCorrects \"sortVersionsNatrually\" method name in `ngdoc.js` in \"sortVersionsNaturally\"",
+      "tree": {
+        "sha": "ed06c7a5882b013823f2acac64ab3b8abbe2971f",
+        "url": "https://api.github.com/repos/angular/angular.js/git/trees/ed06c7a5882b013823f2acac64ab3b8abbe2971f"
+      },
+      "url": "https://api.github.com/repos/angular/angular.js/git/commits/c5f69e3f64514223917d74caf14d21b899474b42",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/angular/angular.js/commits/c5f69e3f64514223917d74caf14d21b899474b42",
+    "html_url": "https://github.com/angular/angular.js/commit/c5f69e3f64514223917d74caf14d21b899474b42",
+    "comments_url": "https://api.github.com/repos/angular/angular.js/commits/c5f69e3f64514223917d74caf14d21b899474b42/comments",
+    "author": {
+      "login": "nicolasleger",
+      "id": 570901,
+      "avatar_url": "https://gravatar.com/avatar/ee88a8f04a724ed0684fee1fe6ff2b8b?d=https%3A%2F%2Fidenticons.github.com%2F6d0c1516bf397542915ae8b10639bd28.png&r=x",
+      "gravatar_id": "ee88a8f04a724ed0684fee1fe6ff2b8b",
+      "url": "https://api.github.com/users/nicolasleger",
+      "html_url": "https://github.com/nicolasleger",
+      "followers_url": "https://api.github.com/users/nicolasleger/followers",
+      "following_url": "https://api.github.com/users/nicolasleger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nicolasleger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nicolasleger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nicolasleger/subscriptions",
+      "organizations_url": "https://api.github.com/users/nicolasleger/orgs",
+      "repos_url": "https://api.github.com/users/nicolasleger/repos",
+      "events_url": "https://api.github.com/users/nicolasleger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nicolasleger/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "tbosch",
+      "id": 690815,
+      "avatar_url": "https://gravatar.com/avatar/2735fe44c5f69fa5a1d2c256e051203a?d=https%3A%2F%2Fidenticons.github.com%2Fd2c243f43a36514922130501bdb55ce9.png&r=x",
+      "gravatar_id": "2735fe44c5f69fa5a1d2c256e051203a",
+      "url": "https://api.github.com/users/tbosch",
+      "html_url": "https://github.com/tbosch",
+      "followers_url": "https://api.github.com/users/tbosch/followers",
+      "following_url": "https://api.github.com/users/tbosch/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tbosch/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tbosch/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tbosch/subscriptions",
+      "organizations_url": "https://api.github.com/users/tbosch/orgs",
+      "repos_url": "https://api.github.com/users/tbosch/repos",
+      "events_url": "https://api.github.com/users/tbosch/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tbosch/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dd24c78373b5d24ecb3b9d19e61e1b3b6c74d155",
+        "url": "https://api.github.com/repos/angular/angular.js/commits/dd24c78373b5d24ecb3b9d19e61e1b3b6c74d155",
+        "html_url": "https://github.com/angular/angular.js/commit/dd24c78373b5d24ecb3b9d19e61e1b3b6c74d155"
+      }
+    ]
+  },
+  {
+    "sha": "dd24c78373b5d24ecb3b9d19e61e1b3b6c74d155",
+    "commit": {
+      "author": {
+        "name": "Daniel Luxemburg",
+        "email": "daniel.luxemburg@gmail.com",
+        "date": "2014-02-04T01:04:46Z"
+      },
+      "committer": {
+        "name": "Tobias Bosch",
+        "email": "tbosch1009@gmail.com",
+        "date": "2014-02-05T00:41:25Z"
+      },
+      "message": "fix(ngMock): return false from mock $interval.cancel() when no argument is supplied\n\nCloses #6103.\nClosed #6099.",
+      "tree": {
+        "sha": "7e0de9522b19e920ab6994da83e2b163c80cf0f3",
+        "url": "https://api.github.com/repos/angular/angular.js/git/trees/7e0de9522b19e920ab6994da83e2b163c80cf0f3"
+      },
+      "url": "https://api.github.com/repos/angular/angular.js/git/commits/dd24c78373b5d24ecb3b9d19e61e1b3b6c74d155",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/angular/angular.js/commits/dd24c78373b5d24ecb3b9d19e61e1b3b6c74d155",
+    "html_url": "https://github.com/angular/angular.js/commit/dd24c78373b5d24ecb3b9d19e61e1b3b6c74d155",
+    "comments_url": "https://api.github.com/repos/angular/angular.js/commits/dd24c78373b5d24ecb3b9d19e61e1b3b6c74d155/comments",
+    "author": {
+      "login": "dluxemburg",
+      "id": 219964,
+      "avatar_url": "https://gravatar.com/avatar/1bf5f80a60842d620bcb6c1cd62840b8?d=https%3A%2F%2Fidenticons.github.com%2F8743b105b9f7573b3465671937a4ab69.png&r=x",
+      "gravatar_id": "1bf5f80a60842d620bcb6c1cd62840b8",
+      "url": "https://api.github.com/users/dluxemburg",
+      "html_url": "https://github.com/dluxemburg",
+      "followers_url": "https://api.github.com/users/dluxemburg/followers",
+      "following_url": "https://api.github.com/users/dluxemburg/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dluxemburg/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dluxemburg/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dluxemburg/subscriptions",
+      "organizations_url": "https://api.github.com/users/dluxemburg/orgs",
+      "repos_url": "https://api.github.com/users/dluxemburg/repos",
+      "events_url": "https://api.github.com/users/dluxemburg/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dluxemburg/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "tbosch",
+      "id": 690815,
+      "avatar_url": "https://gravatar.com/avatar/2735fe44c5f69fa5a1d2c256e051203a?d=https%3A%2F%2Fidenticons.github.com%2Fd2c243f43a36514922130501bdb55ce9.png&r=x",
+      "gravatar_id": "2735fe44c5f69fa5a1d2c256e051203a",
+      "url": "https://api.github.com/users/tbosch",
+      "html_url": "https://github.com/tbosch",
+      "followers_url": "https://api.github.com/users/tbosch/followers",
+      "following_url": "https://api.github.com/users/tbosch/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tbosch/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tbosch/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tbosch/subscriptions",
+      "organizations_url": "https://api.github.com/users/tbosch/orgs",
+      "repos_url": "https://api.github.com/users/tbosch/repos",
+      "events_url": "https://api.github.com/users/tbosch/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tbosch/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "36d37c0e3880c774d20c014ade60d2331beefa15",
+        "url": "https://api.github.com/repos/angular/angular.js/commits/36d37c0e3880c774d20c014ade60d2331beefa15",
+        "html_url": "https://github.com/angular/angular.js/commit/36d37c0e3880c774d20c014ade60d2331beefa15"
+      }
+    ]
+  },
+  {
+    "sha": "36d37c0e3880c774d20c014ade60d2331beefa15",
+    "commit": {
+      "author": {
+        "name": "Caitlin Potter",
+        "email": "caitpotter88@gmail.com",
+        "date": "2014-02-04T16:37:09Z"
+      },
+      "committer": {
+        "name": "Vojta Jina",
+        "email": "vojta.jina@gmail.com",
+        "date": "2014-02-05T00:39:52Z"
+      },
+      "message": "fix(jqLite): trim HTML string in jqLite constructor\n\njQuery will construct DOM nodes containing leading whitespace. Prior to this change, jqLite would\nthrow a nosel minErr due to the first character of the string not being '<'. This change corrects\nthis behaviour by trimming the element string in jqLite constructor before testing for '<'.\n\nCloses #6053",
+      "tree": {
+        "sha": "acf5a90799f618a9be823a6a8dbcf23ba092e095",
+        "url": "https://api.github.com/repos/angular/angular.js/git/trees/acf5a90799f618a9be823a6a8dbcf23ba092e095"
+      },
+      "url": "https://api.github.com/repos/angular/angular.js/git/commits/36d37c0e3880c774d20c014ade60d2331beefa15",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/angular/angular.js/commits/36d37c0e3880c774d20c014ade60d2331beefa15",
+    "html_url": "https://github.com/angular/angular.js/commit/36d37c0e3880c774d20c014ade60d2331beefa15",
+    "comments_url": "https://api.github.com/repos/angular/angular.js/commits/36d37c0e3880c774d20c014ade60d2331beefa15/comments",
+    "author": {
+      "login": "caitp",
+      "id": 2294695,
+      "avatar_url": "https://gravatar.com/avatar/bf1b0db965c4015382f468b96b72d87e?d=https%3A%2F%2Fidenticons.github.com%2F7a9c619f4cd7c3e14cff71a41a006060.png&r=x",
+      "gravatar_id": "bf1b0db965c4015382f468b96b72d87e",
+      "url": "https://api.github.com/users/caitp",
+      "html_url": "https://github.com/caitp",
+      "followers_url": "https://api.github.com/users/caitp/followers",
+      "following_url": "https://api.github.com/users/caitp/following{/other_user}",
+      "gists_url": "https://api.github.com/users/caitp/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/caitp/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/caitp/subscriptions",
+      "organizations_url": "https://api.github.com/users/caitp/orgs",
+      "repos_url": "https://api.github.com/users/caitp/repos",
+      "events_url": "https://api.github.com/users/caitp/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/caitp/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "vojtajina",
+      "id": 46647,
+      "avatar_url": "https://gravatar.com/avatar/d59bdceef864e67df13167d806d6da63?d=https%3A%2F%2Fidenticons.github.com%2F5bb0b4dd9a4f5c0de3564b63d74bcf5f.png&r=x",
+      "gravatar_id": "d59bdceef864e67df13167d806d6da63",
+      "url": "https://api.github.com/users/vojtajina",
+      "html_url": "https://github.com/vojtajina",
+      "followers_url": "https://api.github.com/users/vojtajina/followers",
+      "following_url": "https://api.github.com/users/vojtajina/following{/other_user}",
+      "gists_url": "https://api.github.com/users/vojtajina/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/vojtajina/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/vojtajina/subscriptions",
+      "organizations_url": "https://api.github.com/users/vojtajina/orgs",
+      "repos_url": "https://api.github.com/users/vojtajina/repos",
+      "events_url": "https://api.github.com/users/vojtajina/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/vojtajina/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "24699ee8f04c1f1459be1d36207e654421d58ff0",
+        "url": "https://api.github.com/repos/angular/angular.js/commits/24699ee8f04c1f1459be1d36207e654421d58ff0",
+        "html_url": "https://github.com/angular/angular.js/commit/24699ee8f04c1f1459be1d36207e654421d58ff0"
+      }
+    ]
+  },
+  {
+    "sha": "24699ee8f04c1f1459be1d36207e654421d58ff0",
+    "commit": {
+      "author": {
+        "name": "Caitlin Potter",
+        "email": "caitpotter88@gmail.com",
+        "date": "2014-02-04T23:34:23Z"
+      },
+      "committer": {
+        "name": "Caitlin Potter",
+        "email": "caitpotter88@gmail.com",
+        "date": "2014-02-05T00:34:31Z"
+      },
+      "message": "fix($http): ignore xhr.responseType setter exception if value is \"json\"\n\nWebKit added support for the json responseType value on 09/03/2013\nhttps://bugs.webkit.org/show_bug.cgi?id=73648. Versions of Safari prior to 7 are known to throw when\nsetting the value \"json\" as the response type. Other older browsers implementing the responseType.\nOther browsers with infrequent update cycles may also be affected.\n\nThe json responseType value can be ignored if not supported, because JSON payloads are parsed on the\nclient-side regardless.\n\nCloses #6115\nCloses #6122",
+      "tree": {
+        "sha": "1635725a1671a8385158fe56ef75742aa34782cc",
+        "url": "https://api.github.com/repos/angular/angular.js/git/trees/1635725a1671a8385158fe56ef75742aa34782cc"
+      },
+      "url": "https://api.github.com/repos/angular/angular.js/git/commits/24699ee8f04c1f1459be1d36207e654421d58ff0",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/angular/angular.js/commits/24699ee8f04c1f1459be1d36207e654421d58ff0",
+    "html_url": "https://github.com/angular/angular.js/commit/24699ee8f04c1f1459be1d36207e654421d58ff0",
+    "comments_url": "https://api.github.com/repos/angular/angular.js/commits/24699ee8f04c1f1459be1d36207e654421d58ff0/comments",
+    "author": {
+      "login": "caitp",
+      "id": 2294695,
+      "avatar_url": "https://gravatar.com/avatar/bf1b0db965c4015382f468b96b72d87e?d=https%3A%2F%2Fidenticons.github.com%2F7a9c619f4cd7c3e14cff71a41a006060.png&r=x",
+      "gravatar_id": "bf1b0db965c4015382f468b96b72d87e",
+      "url": "https://api.github.com/users/caitp",
+      "html_url": "https://github.com/caitp",
+      "followers_url": "https://api.github.com/users/caitp/followers",
+      "following_url": "https://api.github.com/users/caitp/following{/other_user}",
+      "gists_url": "https://api.github.com/users/caitp/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/caitp/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/caitp/subscriptions",
+      "organizations_url": "https://api.github.com/users/caitp/orgs",
+      "repos_url": "https://api.github.com/users/caitp/repos",
+      "events_url": "https://api.github.com/users/caitp/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/caitp/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "caitp",
+      "id": 2294695,
+      "avatar_url": "https://gravatar.com/avatar/bf1b0db965c4015382f468b96b72d87e?d=https%3A%2F%2Fidenticons.github.com%2F7a9c619f4cd7c3e14cff71a41a006060.png&r=x",
+      "gravatar_id": "bf1b0db965c4015382f468b96b72d87e",
+      "url": "https://api.github.com/users/caitp",
+      "html_url": "https://github.com/caitp",
+      "followers_url": "https://api.github.com/users/caitp/followers",
+      "following_url": "https://api.github.com/users/caitp/following{/other_user}",
+      "gists_url": "https://api.github.com/users/caitp/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/caitp/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/caitp/subscriptions",
+      "organizations_url": "https://api.github.com/users/caitp/orgs",
+      "repos_url": "https://api.github.com/users/caitp/repos",
+      "events_url": "https://api.github.com/users/caitp/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/caitp/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "aa6a0e3fc6e98e362b5705ea730ab9c2fcf7a7e6",
+        "url": "https://api.github.com/repos/angular/angular.js/commits/aa6a0e3fc6e98e362b5705ea730ab9c2fcf7a7e6",
+        "html_url": "https://github.com/angular/angular.js/commit/aa6a0e3fc6e98e362b5705ea730ab9c2fcf7a7e6"
+      }
+    ]
+  },
+  {
+    "sha": "aa6a0e3fc6e98e362b5705ea730ab9c2fcf7a7e6",
+    "commit": {
+      "author": {
+        "name": "GiffenGood",
+        "email": "mbeckius@gmail.com",
+        "date": "2014-02-04T15:16:49Z"
+      },
+      "committer": {
+        "name": "Tobias Bosch",
+        "email": "tbosch1009@gmail.com",
+        "date": "2014-02-05T00:26:36Z"
+      },
+      "message": "docs(log.js): param debugEnabled is a boolean and not a string",
+      "tree": {
+        "sha": "2300483b60d4cb16dc7f5bf0826caffca240ec96",
+        "url": "https://api.github.com/repos/angular/angular.js/git/trees/2300483b60d4cb16dc7f5bf0826caffca240ec96"
+      },
+      "url": "https://api.github.com/repos/angular/angular.js/git/commits/aa6a0e3fc6e98e362b5705ea730ab9c2fcf7a7e6",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/angular/angular.js/commits/aa6a0e3fc6e98e362b5705ea730ab9c2fcf7a7e6",
+    "html_url": "https://github.com/angular/angular.js/commit/aa6a0e3fc6e98e362b5705ea730ab9c2fcf7a7e6",
+    "comments_url": "https://api.github.com/repos/angular/angular.js/commits/aa6a0e3fc6e98e362b5705ea730ab9c2fcf7a7e6/comments",
+    "author": {
+      "login": "GiffenGood",
+      "id": 1630817,
+      "avatar_url": "https://gravatar.com/avatar/a5721f232c46eccf5b29aee2bc32aaba?d=https%3A%2F%2Fidenticons.github.com%2F46ad356fce26f3790ab8ea3789df9c10.png&r=x",
+      "gravatar_id": "a5721f232c46eccf5b29aee2bc32aaba",
+      "url": "https://api.github.com/users/GiffenGood",
+      "html_url": "https://github.com/GiffenGood",
+      "followers_url": "https://api.github.com/users/GiffenGood/followers",
+      "following_url": "https://api.github.com/users/GiffenGood/following{/other_user}",
+      "gists_url": "https://api.github.com/users/GiffenGood/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/GiffenGood/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/GiffenGood/subscriptions",
+      "organizations_url": "https://api.github.com/users/GiffenGood/orgs",
+      "repos_url": "https://api.github.com/users/GiffenGood/repos",
+      "events_url": "https://api.github.com/users/GiffenGood/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/GiffenGood/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "tbosch",
+      "id": 690815,
+      "avatar_url": "https://gravatar.com/avatar/2735fe44c5f69fa5a1d2c256e051203a?d=https%3A%2F%2Fidenticons.github.com%2Fd2c243f43a36514922130501bdb55ce9.png&r=x",
+      "gravatar_id": "2735fe44c5f69fa5a1d2c256e051203a",
+      "url": "https://api.github.com/users/tbosch",
+      "html_url": "https://github.com/tbosch",
+      "followers_url": "https://api.github.com/users/tbosch/followers",
+      "following_url": "https://api.github.com/users/tbosch/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tbosch/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tbosch/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tbosch/subscriptions",
+      "organizations_url": "https://api.github.com/users/tbosch/orgs",
+      "repos_url": "https://api.github.com/users/tbosch/repos",
+      "events_url": "https://api.github.com/users/tbosch/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tbosch/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8761ddc0e382f48fa0317c88bd6426997d24037f",
+        "url": "https://api.github.com/repos/angular/angular.js/commits/8761ddc0e382f48fa0317c88bd6426997d24037f",
+        "html_url": "https://github.com/angular/angular.js/commit/8761ddc0e382f48fa0317c88bd6426997d24037f"
+      }
+    ]
+  }
+]

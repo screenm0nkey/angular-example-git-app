@@ -1,0 +1,8 @@
+
+
+<div class="row info" ng-click="showDetailedInfo(commit.sha)">
+  <div class="padded {{getClass(0)}}">{{commit.message | shorten:100}}</div>
+  <div class="padded {{getClass(1)}}">{{commit.sha | shorten:7}}</div>
+  <div class="padded {{getClass(2)}}">{{commit.name}}</div>
+  <div class="padded {{getClass(3)}}">{{commit.date | date:'yyyy-MM-dd HH:mm'}}</div>
+</div>

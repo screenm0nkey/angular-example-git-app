@@ -1,0 +1,58 @@
+// variables
+@grayDark : #ccc;
+@gray     : #dfdfdf;
+
+.img-polaroid {
+  padding: 4px;
+  background-color: @gray;
+  border: 10px solid @grayDark;
+  border: 10px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.padded { padding: 10px; }
+
+.container {
+  &.main {
+    position: relative;
+    top: 70px;
+    .img-polaroid();
+
+    .body {
+      margin-bottom: -4px;
+    }
+
+    .row {
+      margin-right: 9px;
+      margin-left: -19px;
+      border-bottom: 1px solid @gray;
+
+
+      &.info {
+        &:hover {
+          background : @grayDark;
+          border-bottom: 1px solid #fff;
+          cursor : pointer;
+        }
+      }
+    }
+  }
+}
+
+header {
+  color: @gray;
+  font-weight: bold;
+  font-size : 2em;
+  margin-top: -4px;
+
+  >.row {
+    background-color: orange;
+  }
+}
+
+

@@ -1,0 +1,10 @@
+<div class="container">
+  <header>
+    <div class="row">
+      <div class="{{getClass($index)}}" ng-repeat="heading in headings">
+        {{heading}}
+      </div>
+    </div>
+  </header>
+  <div class="body" ng-transclude></div>
+</div>

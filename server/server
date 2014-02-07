@@ -1,0 +1,61 @@
+#!/usr/bin/env node
+
+"use strict";
+
+var express     = require('express'),
+    fs          = require('fs'),
+    staticDir   = express['static'],
+    path        = require('path'),
+    _          = require('underscore');
+
+var staticDirs = ['css','img', 'js', 'lib', 'partials'],
+    PATH = path.join(__dirname, '../app/'),
+    expApp = express();
+
+expApp.configure(function () {
+  staticDirs.forEach(function (item) {
+    expApp.use('/'+item, staticDir(PATH + item));
+  });
+  expApp.use(express.bodyParser());
+});
+
+expApp.get("/", function(req, res) {
+  fs.createReadStream(PATH + 'index-async.html').pipe(res);
+});
+
+expApp.get("/data/commits", function (req, res) {
+  var arr = JSON.parse(fs.readFileSync(PATH + 'data/commit-list.json', 'utf8'));
+  res.json(arr);
+  res.end();
+});
+
+expApp.get("/data/commits/:sha", function (req, res) {
+  var arr = JSON.parse(fs.readFileSync(PATH + 'data/commit-list.json', 'utf8')),
+      sha = req.params.sha, robj;
+
+  _.each(arr, function (item, index) {
+    if (item.sha === sha) {
+      robj = item;
+
+      if (!index) {
+        robj.next = arr[index+1].sha;
+        robj.previous = null;
+      }
+      else if (index === arr.length-1) {
+        robj.next = null;
+        robj.previous = arr[index-1].sha;
+      }
+      else {
+        robj.next = arr[index+1].sha;
+        robj.previous = arr[index-1].sha;
+      }
+    }
+  });
+
+  res.json(robj);
+  res.end();
+});
+
+console.log('Listening on Port 1970');
+console.log(PATH);
+expApp.listen(1970);
