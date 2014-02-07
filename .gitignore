@@ -1,0 +1,62 @@
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+*.sass-cache
+
+# OS or Editor folders
+.DS_Store
+Thumbs.db
+.cache
+.project
+.settings
+.tmproj
+
+# Dreamweaver added files
+_notes
+dwsync.xml
+
+# Komodo
+*.komodoproject
+.komodotools
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+*.esproj
+
+# Folders to ignore
+.hg
+.svn
+.CVS
+intermediate
+publish
+.idea
+app/compiled/*
+
+# build script local files
+build/buildinfo.properties
+build/config/buildinfo.properties
+
+
+docs
+test/reports/*
+docs.tar.gz
+intermediate
+publish
+node_modules/
+
+
+nbproject
+nick*
+default_search.js
+coverage
+test/app/instrumented
+
+testem.json
