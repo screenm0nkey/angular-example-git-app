@@ -44,19 +44,10 @@ app/compiled/*
 build/buildinfo.properties
 build/config/buildinfo.properties
 
-
 docs
 test/reports/*
 docs.tar.gz
 intermediate
 publish
 node_modules/
-
-
-nbproject
-nick*
-default_search.js
-coverage
-test/app/instrumented
-
 testem.json

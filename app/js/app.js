@@ -24,9 +24,9 @@ app.config(['$routeProvider', 'PATH',
     controller: 'MainCtrl',
     resolve : {
       // get the data first for commits page. 'commits' can be injected
-      commits : ['GitService', function (resource) {
+      commits : ['GitService', function (git) {
         // return the promise. the page wont load until this is done;
-        return resource.getAllCommits();
+        return git.getAllCommits();
       }]
     }
   });
@@ -37,17 +37,18 @@ app.config(['$routeProvider', 'PATH',
     resolve : {
       // use $route.current.params.key here. The $routeParams is updated only
       // after a route is changed and its that you inject into a controller
-      commit : ['$route', 'GitService', function ($route, git) {
-
-        function getAllUserCommits (commit) {
-          return git.getAllUserCommits(commit.email).then(function (arr) {
-            commit.allCommits = arr;
-            return commit;
+      commit : function ($route, GitService) {
+        // the 'cmt' argument value is whatever is returned from git.getCommit()
+        // in the chained promises below.
+        function getAllUserCommits (cmt) {
+          return GitService.getAllUserCommits(cmt.email).then(function (arr) {
+            cmt.allCommits = arr;
+            return cmt;
           });
         }
 
-        return git.getCommit($route.current.params.sha).then(getAllUserCommits);
-      }]
+        return GitService.getCommit($route.current.params.sha).then(getAllUserCommits);
+      }
     }
   });
 

@@ -10,14 +10,14 @@
   function ($rootScope, $resource, $q) {
     var localUrl = '/data/commits/:id',
         gitUrl = 'https://api.github.com/repos/angular/angular.js/commits/:id',
-        gitResource = $resource(gitUrl, {id: '@id'}, {isArray:true}),
-        localResource = $resource(localUrl, {id: '@id'}, {isArray:true}),
+        gitResource = $resource(gitUrl, {id: '@id'}),
+        localResource = $resource(localUrl, {id: '@id'}),
 
     getCommit = function (sha) {
       var deferred = $q.defer();
 
       localResource.get({id: sha },
-        function (commit) {
+        function success (commit) {
           // contains details of the user who made the commit
           deferred.resolve({
             name     : commit.commit.committer.name,
@@ -30,7 +30,7 @@
             prevSha  : commit.previous
           });
         },
-        function (response) {
+        function error (response) {
           deferred.reject(response);
         });
       return deferred.promise;
@@ -40,7 +40,7 @@
       var deferred = $q.defer();
 
       gitResource.query({ author : userId },
-        function (arr) {
+        function success (arr) {
           arr = _.map(arr, function (commit) {
             return {
               date    : commit.commit.committer.date,
@@ -50,7 +50,7 @@
           });
           deferred.resolve(arr);
         },
-        function (response) {
+        function error (response) {
           deferred.reject(response);
         });
 
@@ -60,7 +60,7 @@
     getAllCommits = function() {
       var deferred = $q.defer();
 
-      localResource.query(function (commits) {
+      localResource.query(function success (commits) {
         // create a commit object
         var mapArr = _.map(commits, function (commit) {
           return {
@@ -73,7 +73,7 @@
         });
 
         deferred.resolve(mapArr);
-      }, function (resp) {
+      }, function error (resp) {
         deferred.reject(resp);
       });
 
